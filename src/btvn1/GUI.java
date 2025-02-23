@@ -123,6 +123,8 @@ public class GUI extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new GUI().setVisible(true));
+            GUI gui = new GUI();
+            gui.setVisible(true);
+     
     }
 }
