@@ -105,7 +105,7 @@ public class GUI extends JFrame {
         tableModel.setRowCount(0);
         for (Student s : cl.getStudent()) {
             Object[] rowData = {
-                s.getLastName(), s.getFirstName(), s.getBirthdate(),
+                s.getFirstName(),s.getLastName(), s.getBirthdate(),
                 s.getAddress(), s.getClassName(), String.format("%.2f", s.diem_TB()), s.xepLoai()
             };
             tableModel.addRow(rowData);
@@ -118,8 +118,8 @@ public class GUI extends JFrame {
         int countC = cl.countRank("C");
         int countD = cl.countRank("D");
         int countF = cl.countRank("<D");
-        summaryLabel.setText("Tổng kết: A: " + countA + " - B: " + countB +
-                " - C: " + countC + " - D: " + countD + " - <D: " + countF);
+        summaryLabel.setText("Tổng kết: A: " + countA + "   -   B: " + countB +
+                "   -   C: " + countC + "   -   D: " + countD + "   -   <D: " + countF);
     }
 
     public static void main(String[] args) {
